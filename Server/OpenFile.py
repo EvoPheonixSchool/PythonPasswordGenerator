@@ -22,7 +22,9 @@ class OpenFile:
             if line == "":
                 run = False
             else:
-                print(line.index(','))
+                line = line.replace('\n', '')
+                ESTlist += line.split(',')
+                #print(ESTlist[3])
 
         #sets the file pointer to the start
         file.seek(0)
