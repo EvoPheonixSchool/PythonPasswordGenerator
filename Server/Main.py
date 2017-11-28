@@ -14,7 +14,7 @@ password = ""
 #creates a file object from the file made in the openfile class
 #passing the filename and mode to use
 #file = oFile.open("also test.txt", "r+")
-file = oFile.open("test.csv", "r+")
+file = oFile.open("00010014-eng.csv", "r+")
 
 #gets a list of EST values stripped from the file
 list = oFile.StripEST(file)

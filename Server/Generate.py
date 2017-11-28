@@ -5,7 +5,7 @@ from random import randint
 class Generate(object):
     pass
 
-
+#this class generates the password and sends it off
 class Generate:
     list = []
 
@@ -41,6 +41,7 @@ class Generate:
                 password = password.replace(" ", "")
                 password = re.sub('[^a-zA-Z0-9\n\.]', '', password)
 
+        #remove capitals
         if (capitals == "n"):
             password = password.lower()
 

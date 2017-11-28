@@ -1,3 +1,4 @@
+#this class is the client that sends options to the server for a password
 import socket
 
 s = socket.socket()
