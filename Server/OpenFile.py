@@ -1,4 +1,6 @@
-#this class will handle opening the file and splitting the data
+# this class will handle opening the file and splitting the data
+# Author: Sheldon McGrath
+# Last Updated: 17-12-2017
 class OpenFile:
 
     #this method opens the file and returns a file object
@@ -10,7 +12,6 @@ class OpenFile:
     #this method returns the list of EST values from the file in a list
     def StripEST(self, f):
         file = f
-        line = ""
         ESTlist = []
         run = True
 
@@ -24,9 +25,8 @@ class OpenFile:
             else:
                 line = line.replace('\n', '')
                 ESTlist += line.split(',')
-                #print(ESTlist[3])
 
         #sets the file pointer to the start
         file.seek(0)
-        
+
         return ESTlist

@@ -1,9 +1,9 @@
-import re
-
+# this is the main class to controll the password generator
+# Author: Sheldon McGrath
+# Last Updated: 17-12-2017
 from OpenFile import OpenFile
-from random import randint
 from Connection import Connection
-#this is the main class to controll the password generator
+
 
 #creates an object of the openfile class
 oFile = OpenFile()
@@ -13,16 +13,14 @@ password = ""
 
 #creates a file object from the file made in the openfile class
 #passing the filename and mode to use
-#file = oFile.open("also test.txt", "r+")
 file = oFile.open("00010014-eng.csv", "r+")
+
+print("Sheldon McGrath")
+print("Waiting for Connections...")
 
 #gets a list of EST values stripped from the file
 list = oFile.StripEST(file)
 
 conn.connect(list)
-#client.send("test")
-
-#prints the file for testing
-#print(file.read())
 
 
