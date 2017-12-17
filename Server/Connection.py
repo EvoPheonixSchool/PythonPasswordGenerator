@@ -8,6 +8,7 @@ from Server.Generate import Generate
 
 
 class Connection:
+    # This class is used to create a connection to a client and thread for them
     def connect(self, list):
         # sets socket to lisen on
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

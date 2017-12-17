@@ -12,9 +12,10 @@ class Generate(object):
 class Generate:
     list = []
 
-    # Ask for user input on password
+    # This method is to start the password generation
     def start(self, client, list):
         print("Connection made")
+        # Ask for user input on password
         length = int(client.recv(1024))
         symbols = client.recv(1024)
         capitals = client.recv(1024)
